@@ -36,13 +36,9 @@ class MusterAppServer extends HttpServer {
   override def thriftPort: Option[Int] = Some(PortUtils.getPort(thriftService))
 }
 
-case class ThriftAddress(value: Int)
-
 object MusterModule extends MusterModule
 
 class MusterModule extends TwitterModule {
-
-
   @Provides
   def providesMusterThriftService(): MusterThriftService =
     new MusterThriftService()
