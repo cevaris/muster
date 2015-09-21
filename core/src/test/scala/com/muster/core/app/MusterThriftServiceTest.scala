@@ -43,7 +43,7 @@ class MusterThriftServiceTest extends WordSpec with MustMatchers {
     }
 
 
-    "handle successful put and get" in {
+    "handle successful put and get request" in {
       val testKey = "test"
       val testValue = "value"
 
@@ -65,6 +65,21 @@ class MusterThriftServiceTest extends WordSpec with MustMatchers {
       response.context.datetime mustBe getContext.datetime
       response.value mustBe Some(testValue.getBytes.toSeq)
       response.status mustBe MusterCacheStatus.Ok
+    }
+
+    s"handle ${MusterCacheStatus.KeyNotFound} get request" in {
+      val testKey = "missing-key"
+
+      val getContext = ContextHelper.newContext
+      val responseFuture: Future[MusterCacheGetResponse] = client.get(
+        MusterCacheGetRequest(context = getContext, key = testKey)
+      )
+
+      val response: MusterCacheGetResponse = Await.result(responseFuture)
+
+      response.context.id mustBe getContext.id
+      response.context.datetime mustBe getContext.datetime
+      response.status mustBe MusterCacheStatus.KeyNotFound
     }
 
   }

@@ -61,14 +61,14 @@ class MusterThriftService @Inject()()
 
   override def get(request: MusterCacheGetRequest): Future[MusterCacheGetResponse] = {
 
-    val resultOpt: Option[Seq[Byte]] = if (store.containsKey(request.key)) {
-      Some(store.get(request.key))
+    val (resultStatus, resultOpt) = if (store.containsKey(request.key)) {
+      (MusterCacheStatus.Ok, Some(store.get(request.key)))
     } else {
-      None
+      (MusterCacheStatus.KeyNotFound, None)
     }
 
     Future.value(
-      MusterCacheGetResponse(context = request.context, status = MusterCacheStatus.Ok, key = request.key, value = resultOpt)
+      MusterCacheGetResponse(context = request.context, status = resultStatus, key = request.key, value = resultOpt)
     )
   }
 

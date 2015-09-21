@@ -56,7 +56,7 @@ lazy val core = project.in(file("core"))
       "com.twitter.finatra" %% "finatra-http" % versions.finatra % "test" classifier "tests",
       "com.twitter.finatra" %% "finatra-httpclient" % versions.finatra,
       "com.twitter.finatra" %% "finatra-httpclient" % versions.finatra % "test" classifier "tests",
-      //      "com.twitter.finatra" %% "finatra-logback" % versions.finatra,
+      "com.twitter.finatra" %% "finatra-logback" % s"${versions.finatra}.M1",
       "com.twitter.inject" %% "inject-app" % versions.finatra % "test",
       "com.twitter.inject" %% "inject-core" % versions.finatra % "test",
       "com.twitter.inject" %% "inject-modules" % versions.finatra % "test",
