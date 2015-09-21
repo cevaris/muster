@@ -18,38 +18,12 @@
       <sourceFolder url="file://$MODULE_DIR$/../../src/test/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../../target/scala-2.10/resource_managed/test" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/../../target/resolution-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/../../target/scala-2.11" />
       <excludeFolder url="file://$MODULE_DIR$/../../target/streams" />
       <excludeFolder url="file://$MODULE_DIR$/../../target/thrift_external" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="SBT: com.google.code.findbugs:jsr305:2.0.1:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.google.guava:guava:16.0.1:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.twitter:finagle-core_2.10:6.28.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.twitter:finagle-thrift_2.10:6.24.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.twitter:jsr166e:1.0.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.twitter:util-app_2.10:6.27.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.twitter:util-codec_2.10:6.27.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.twitter:util-collection_2.10:6.27.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.twitter:util-core_2.10:6.27.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.twitter:util-function_2.10:6.27.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.twitter:util-hashing_2.10:6.27.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.twitter:util-jvm_2.10:6.27.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.twitter:util-logging_2.10:6.27.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.twitter:util-registry_2.10:6.27.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.twitter:util-stats_2.10:6.27.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: commons-codec:commons-codec:1.9:jar" level="project" />
-    <orderEntry type="library" name="SBT: commons-collections:commons-collections:3.2.1:jar" level="project" />
-    <orderEntry type="library" name="SBT: commons-logging:commons-logging:1.1.1:jar" level="project" />
-    <orderEntry type="library" name="SBT: io.netty:netty:3.10.1.Final:jar" level="project" />
-    <orderEntry type="library" name="SBT: javax.inject:javax.inject:1:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.apache.commons:commons-lang3:3.1:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.apache.httpcomponents:httpclient:4.2.5:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.apache.httpcomponents:httpcore:4.2.4:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.apache.thrift:libthrift:0.9.1:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.10.5:jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="SBT: org.scala-lang:scala-reflect:2.10.4:jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="SBT: org.scalatest:scalatest_2.10:2.2.4:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.slf4j:slf4j-api:1.5.8:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.10.0:jar" level="project" />
   </component>
 </module>
