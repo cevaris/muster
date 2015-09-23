@@ -1,5 +1,6 @@
 package com.muster.core.app
 
+import com.muster.core.MusterSpec
 import com.muster.core.utils.context.ContextHelper
 import com.muster.thriftscala._
 import com.twitter.finagle.ThriftMux
@@ -7,9 +8,8 @@ import com.twitter.finagle.client.Transporter.ConnectTimeout
 import com.twitter.finagle.service.FailFastFactory.FailFast
 import com.twitter.finatra.http.test.EmbeddedHttpServer
 import com.twitter.util.{Await, Duration, Future}
-import org.scalatest.{MustMatchers, WordSpec}
 
-class MusterThriftServiceTest extends WordSpec with MustMatchers {
+class MusterThriftServiceTest extends MusterSpec {
 
   val server = new EmbeddedHttpServer(
     twitterServer = new MusterAppServer,
